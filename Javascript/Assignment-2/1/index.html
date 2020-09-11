@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+
+<body>
+    <div>
+        <img width=20% height=20% id="showImg" src="./one.PNG" alt="" srcset="">
+    </div>
+
+    <button onClick=first() id="first-btn">First</button>
+    <button onClick=second() id="second-btn">Second</button>
+    <button onClick=third() id="third-btn">Third</button>
+
+
+</body>
+
+<script>
+    function first() {
+        var img = document.getElementById("showImg")
+        img.src = "one.PNG";
+        document.getElementById("showImg").appendChild(img);
+    }
+    function second() {
+        var img = document.getElementById("showImg")
+        img.src = "two.PNG";
+        document.getElementById("showImg").appendChild(img);
+    }
+    function third() {
+        var img = document.getElementById("showImg")
+        img.src = "three.PNG";
+        document.getElementById("showImg").appendChild(img);
+    }
+</script>
+
+</html>
